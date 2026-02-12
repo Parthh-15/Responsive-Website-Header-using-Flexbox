@@ -5,111 +5,141 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* HEADER */
-.header {
-  display: flex;                      /* Mandatory */
-  align-items: center;                /* Mandatory */
-  justify-content: space-between;     /* Mandatory */
-  padding: 18px 60px;
-  background: linear-gradient(135deg, #141E30, #243B55);
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+body {
+  background: #f1f2f6;
 }
 
-/* LOGO */
-.logo {
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.logo span {
-  color: #00f2ff;
-}
-
-/* NAVIGATION */
-.nav {
+.dashboard {
   display: flex;
-  gap: 30px;
-  margin-left: auto;                  /* Mandatory */
-  margin-right: auto;
+  min-height: 100vh;
 }
 
-.nav a {
-  text-decoration: none;
+/* ---------------- SIDEBAR ---------------- */
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #141E30, #0f172a);
   color: white;
-  font-weight: 400;
-  position: relative;
-  transition: all 0.3s ease;
+  padding: 30px 20px;
 }
 
-/* Underline Hover Effect */
-.nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: #00f2ff;
-  left: 0;
-  bottom: -5px;
+.brand {
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #cbd5e1;
   transition: 0.3s;
 }
 
-.nav a:hover::after {
-  width: 100%;
-}
-
-.nav a:hover {
+.sidebar-nav a:hover {
   color: #00f2ff;
 }
 
-/* BUTTON */
-.cta {
-  margin-left: auto;                  /* Mandatory */
+/* ---------------- MAIN ---------------- */
+
+.main {
+  flex: 1;
+  padding: 25px 40px;
 }
 
-.cta button {
-  padding: 10px 22px;
-  border: none;
-  border-radius: 25px;
-  background: #00f2ff;
-  color: #000;
+/* ---------------- TOPBAR ---------------- */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar input {
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.admin {
   font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.cta button:hover {
-  background: white;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 242, 255, 0.4);
+/* ---------------- CARDS ---------------- */
+
+.cards {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
-/* ---------------- MOBILE RESPONSIVE ---------------- */
+.card {
+  flex: 1;
+  background: #e5e7eb;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-@media (max-width: 768px) {
+.card h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
 
-  .header {
-    flex-direction: column;           /* Mandatory */
-    align-items: stretch;
-    padding: 20px;
+.card p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ---------------- STATS ---------------- */
+
+.stats {
+  display: flex;
+  gap: 25px;
+}
+
+.stat-box {
+  flex: 1;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+  .dashboard {
+    flex-direction: column;
   }
 
-  .nav {
-    flex-direction: column;           /* Mandatory */
-    gap: 15px;
-    margin: 20px 0;
-    text-align: center;
-  }
-
-  .cta {
+  .sidebar {
     width: 100%;
   }
 
-  .cta button {
-    width: 100%;                      /* Full width button */
+  .cards,
+  .stats {
+    flex-direction: column;
   }
 
+  .topbar input {
+    width: 100%;
+  }
 }
