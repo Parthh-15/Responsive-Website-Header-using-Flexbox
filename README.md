@@ -49,11 +49,13 @@ Button becomes full width
 
 _Desktop View_
 
-<img width="1470" height="956" alt="Screenshot 2026-02-12 at 1 54 02 PM" src="https://github.com/user-attachments/assets/eb59f50e-ea8f-4f01-bb94-94ad8d2aa446" />
+<img width="1470" height="956" alt="Screenshot 2026-02-12 at 2 32 57 PM" src="https://github.com/user-attachments/assets/cb8791c8-b50d-4958-96f4-0b2d44d09e1c" />
+
 
 _Mobile View_
 
-<img width="385" height="512" alt="Screenshot 2026-02-12 at 1 54 40 PM" src="https://github.com/user-attachments/assets/37a72c99-079f-4877-a5ed-c371f9794ab4" />
+<img width="386" height="512" alt="Screenshot 2026-02-12 at 2 33 17 PM" src="https://github.com/user-attachments/assets/f2367159-191f-4e71-a4bb-b204e2576aab" />
+
 
 🚀 How to Run
 
