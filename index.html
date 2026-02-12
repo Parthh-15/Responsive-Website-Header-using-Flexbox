@@ -5,70 +5,69 @@
   <title>FlexDash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="dashboard">
+<div class="app">
 
-  <!-- Sidebar -->
+  <!-- SIDEBAR -->
   <aside class="sidebar">
     <h2 class="brand">FlexDash</h2>
-    <nav class="sidebar-nav">
-      <a href="#">Dashboard</a>
-      <a href="#">Analytics</a>
-      <a href="#">Users</a>
-      <a href="#">Reports</a>
-      <a href="#">Settings</a>
-    </nav>
+    <ul class="menu">
+      <li>Dashboard</li>
+      <li>Analytics</li>
+      <li>Users</li>
+      <li>Reports</li>
+      <li>Settings</li>
+    </ul>
   </aside>
 
-  <!-- Main Content -->
-  <div class="main">
+  <!-- MAIN AREA -->
+  <main class="main">
 
-    <!-- Topbar -->
+    <!-- TOP BAR -->
     <header class="topbar">
       <input type="text" placeholder="Search dashboard..." />
       <div class="admin">👤 Admin</div>
     </header>
 
-    <!-- Cards Section -->
+    <!-- TOP CARDS -->
     <section class="cards">
       <div class="card">
-        <h3>Users</h3>
-        <p>1,240</p>
+        <span>Users</span>
+        <h3>1,240</h3>
       </div>
 
       <div class="card">
-        <h3>Revenue</h3>
-        <p>₹2.4L</p>
+        <span>Revenue</span>
+        <h3>₹2.4L</h3>
       </div>
 
       <div class="card">
-        <h3>Orders</h3>
-        <p>320</p>
+        <span>Orders</span>
+        <h3>320</h3>
       </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- BLUE STATS -->
     <section class="stats">
-      <div class="stat-box">
-        <h3>Growth</h3>
-        <p>+18%</p>
+      <div class="stat">
+        <span>Growth</span>
+        <h3>+18%</h3>
       </div>
 
-      <div class="stat-box">
-        <h3>Conversion</h3>
-        <p>5.4%</p>
+      <div class="stat">
+        <span>Conversion</span>
+        <h3>5.4%</h3>
       </div>
     </section>
 
-  </div>
+  </main>
 </div>
 
 </body>
 </html>
-
